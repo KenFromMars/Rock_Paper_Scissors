@@ -25,23 +25,24 @@ let humanScore = 0;
 let computerScore =0;
 function playRound(humanInput,computerInput){
     if(humanInput===computerInput){
-        console.log(`TRY AGAIN! ${humanInput} CAN'T BEAT ${computerInput}.`)
+        alert(`TRY AGAIN! ${humanInput} CAN'T BEAT ${computerInput}.`)
         return {
             humanScore: humanScore,
             computerScore: computerScore
         };
+        
     }
     else if (humanInput==="rock" && computerInput ==="scissors" ||
              humanInput==="scissors" && computerInput ==="paper" ||
              humanInput ==="paper" && computerInput ==="rock" ){
-                console.log(`YEAH YOU GOT IT! ${humanInput} BEATS ${computerInput}.`)
+                alert(`YEAH YOU GOT IT! ${humanInput} BEATS ${computerInput}.`)
                 return {
                     humanScore: ++humanScore,
                     computerScore: computerScore
                 };
     }
     else {
-        console.log(`YOU MISSED! ${computerInput} BEATS ${humanInput}.`)
+        alert(`YOU MISSED! ${computerInput} BEATS ${humanInput}.`)
         return {
             
             humanScore: humanScore,
@@ -55,10 +56,10 @@ function playGame(){
         playRound(getHumanChoice(),getComputerChoice() );
     }
     if(humanScore > computerScore){
-        console.log(`YOU WIN! ${humanScore}:${computerScore}`)
+        alert(`YOU WIN! ${humanScore}:${computerScore}`)
     }
     else if(computerScore>humanScore) {
-        console.log(`COMPUTER WINS!"${computerScore}:${humanScore}`)
+        alert(`COMPUTER WINS!"${computerScore}:${humanScore}`)
     }
     else {
         console.log(`TIE!"${computerScore}:${humanScore}`)
