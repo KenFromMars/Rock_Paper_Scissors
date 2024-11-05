@@ -1,0 +1,22 @@
+input from computer
+input from player two
+compare input from player one to two
+if input from player one is 5(paper) and from player two is 0(rock)
+print player one is winner 
+if input from player one is 5(paper) and from player two is 2(sicssors)
+print player two is winner
+if input from player one is 5(paper) and from player two is 5(paper)
+print tie
+if input from player one is 0(rock) and from player two is 0(rock)
+print player one is winner 
+if input from player one is 0(rock)and from player two is 2(sicssors)
+print player two is winner
+if input from player one is 0(rock) and from player two is 5(paper)
+print tie
+if input from player one is 2(sicssors) and from player two is 0(rock)
+print player one is winner 
+if input from player one is 2(sicssors)and from player two is 2(sicssors)
+print player two is winner
+if input from player one is 2(sicssors) and from player two is 5(paper)
+print tie
+else play again
